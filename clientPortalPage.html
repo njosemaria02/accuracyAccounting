@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title> Accuracy Client Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+  <!-- javascript required for opening homepage through alternative means -->
+  <script>
+    function openHomePage() {
+      window.location.href = "index.html";
+    }
+    function openAboutUsPage() {
+      window.location.href = "aboutUsPage.html";
+    }
+    function openServicesPage() {
+      window.location.href = "servicesPage.html";
+    }
+
+// js dont need anymore ///////////////////////////////////////////////////////
+  </script>
+
+  <!-- DONT USE THIS (payment)
+    <br>This is my payment information.
+      <br>It is good information.
+      <br>Very interesting information.
+      <br>Have a list of all the reasons its good:
+      <ul>
+        <li>Just is.</li>
+        <li>Very good.</li>
+        <li>Nuff said.</li>
+      </ul> -->
+ <!-- DONT USE THIS (documents)
+  <br>I have info in here too!
+  <br>Rather, I want your info in here.
+  <br><i>Just wanting your information :)</i> -->
+  <!-- DONT USE THIS (schedule)
+  <br>I dont have the API or anything for this yet.
+    <br> rIP
+    <br>Thats okay I'lll find something eventually. -->
+
+
+</header>
+
+<body>
+  <!-- entire code for navbar ------------------------------------------------->
+  <!-- navigation bar code from right to left tabs -->
+  <div class="topnav">
+    <a href="contactUsPage.html">Contact Us</a>
+    <a href="clientPortalPage.html">Client Portal</a>
+    <a href="newsPage.html">News</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openServicesPage()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="bookkeepingPage.html">Bookkeeping</a>
+        <a href="auditsPage.html">Audits</a>
+        <a href="taxesPage.html">Taxes</a>
+        <a href="annualReportsPage.html">Annual Reports</a>
+      </div> -->
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openAboutUsPage()">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="#missionStatement">Mission Statement</a>
+        <a href="#companyHistory">Company History</a>
+        <a href="#meetOurTeam">Meet Our Team</a>
+      </div> -->
+    </div>
+
+    <div class="accuracyLogo">
+      <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+    </div>
+    <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+  </div>
+  <!-- end of navbar code ----------------------------------------------------->
+  <h1>Client Portal</h1>
+
+  <div class="tab" id="infoBorder">
+    <button class="tablinks" onclick="openInfo(event, 'intro')" id="defaultOpen">Welcome</button>
+    <button class="tablinks" onclick="openInfo(event, 'payment')">Payment Plan</button>
+    <button class="tablinks" onclick="openInfo(event, 'documents')">Documents</button>
+    <button class="tablinks" onclick="openInfo(event, 'schedule')">Schedule</button>
+    <button class="tablinks" onclick="openInfo(event, 'FAQ')">FAQ</button>
+
+    <div id="intro" class="tabcontent">
+      <h3 class="tabcontentHeaders">Welcome</h3>
+      <h5>Please select a tab at the top to proceed.</h5>
+    </div>
+
+    <div id="payment" class="tabcontent">
+      <h3 class="tabcontentHeaders">Following Payment Plan Selections for This Account:</h3>
+      <h5>
+        <br>Bookkeeping Plan: not purchased
+        <br>Audit Plan: Small Company-$179
+        <br>Tax Prep Plan: Plan B (Itemized Deducations, State Return)-$273
+        <br>Annual Report Plan: not purchased
+      </h5>
+      <div id="otherPlansTable">
+        <h3>Other Available Plans:</h3>
+        <table>
+          <tr>
+            <th>Bookkeeping Plans:</th>
+            <th>Audit Plans:</th>
+            <th>Tax Prep Plans:</th>
+            <th>Annual Report Plans:</th>
+          </tr>
+          <tr><h5>
+            <td>$30-$50 each hour</td>
+            <td>Small Company (< 1000 employees)-$179</td>
+            <td>Plan A <i>(doesn't include itemized deductions, includes state return)-$159</i></td>
+            <td>$150
+          </tr>
+          <tr>
+            <td></td>
+            <td>Big Company (>= 1000 employees)-$249</td>
+            <td>Plan B *includes itemized deductions and state returns)-$273</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Plan C: (includes itemized deductions, business income, and state returns)-$447</td>
+            <td></td>
+          </tr></h5>
+        </table>
+      </div>
+    </div>
+
+    <div id="documents" class="tabcontent">
+      <h3 class="tabcontentHeaders">Documents</h3>
+      <h4>Please upload your documents <a href="https://drive.google.com/drive/folders/1BAWKYqiVTGPlFp_ekWI9J8uz7FQeRaRQ?usp=sharing" target="_blank">here</a>.
+      <br>Press <a href="https://drive.google.com/drive/folders/1BAWKYqiVTGPlFp_ekWI9J8uz7FQeRaRQ?usp=sharing" target="_blank">here</a> to see your uploads.</h4>
+
+      <br>View our plans for your company <a href="https://drive.google.com/drive/folders/1BAWKYqiVTGPlFp_ekWI9J8uz7FQeRaRQ?usp=sharing" target="_blank">here</a>.
+    </div>
+
+    <div id="schedule" class="tabcontent">
+      <h3 class="tabcontentHeaders">Schedule an Appointment or Meeting</h3>
+      <h5>We can be contacted at (404-432-0189) or accuracy029@gmail.com to schedule appointments and meetings.
+        <br><br>Below is a calendar of your current meeting days and times with one of our representatives.
+                These meeting times have been input into our system through our representatives.
+                If a date needs altering or a new appointment needs to be made, please contact us at the information above.</h5>
+      <br><iframe src="https://calendar.google.com/calendar/embed?src=accuracy029%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div id="FAQ" class="tabcontent">
+      <h3 class="tabcontentHeaders"> Frequently Asked Questions</h3>
+      <p><b><i style="color: #B19F9E;">What should I bring to my appointments?</b></i>
+        <br><h5 class="smallerFont">For the first meeting, a copy of your individual or your company’s tax
+                returns will suffice. At this meeting we will then discuss what other
+                documents will be required for your requested service.</h5>
+
+      <p><b><i style="color: #B19F9E;">Can I leave information and other physical documentation for analysis at your office without scheduling an appointment?</b></i>
+        <br><h5 class="smallerFont">Yes. Documentation can be dropped of at the front desk of our office and
+                our assistants will ensure it gets to the proper representative for analysis.</h5>
+
+      <p><b><i style="color: #B19F9E;">What should I do if I was mailed an official tax notice from the IRS or state?</b></i>
+        <br><h5 class="smallerFont">We will analyze the tax notice and notify you on its cause for being
+                sent and what actions need to be taken, but only after receiving it through
+                email or fax at accuracy029@gmail or 404-432-0189</h5>
+    </div>
+
+  </div>
+
+    <script>
+      document.getElementById("defaultOpen").click();
+
+        function openInfo(evt, infoName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(infoName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+
+
+</body>
+
+<footer>
+
+  <div class="columnTwoFooter">
+      <div class="accuracyLogo">
+        <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+      </div>
+      <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+
+      <br><br>
+
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      ·
+      <a href="aboutUsPage.html">About Us</a>
+      ·
+      <a href="servicesPage.html">Services</a>
+      ·
+      <a href="clientPortalPage.html">Client Portal</a>
+      ·
+      <a href="contactUsPage.html">Contact Us</a>
+      .
+      <a href="siteMapPage.html">Site Map</a>
+    </p>
+
+    <p class="footer-company-name">Accuracy Accounting &copy; 2018</p>
+  </div>
+
+  <div class="columnTwoFooter">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>2489 Clement Street</span>
+        <br> Atlanta, Georgia</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>404-432-0189</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:accuracy029@gmail.com">accuracy029@gmail.com</a></p>
+    </div>
+
+    <div class="footer-icons">
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i><img id="facebookIcon">Facebook</a>
+      <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i><img id="twitterIcon">Twitter</a>
+      <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-linkedin"></i><img id="linkedInIcon">LinkedIn</a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-instagram"></i><img id="instagramIcon">Instagram</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</html>

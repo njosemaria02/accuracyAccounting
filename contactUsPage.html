@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title> Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+  <!-- javascript required for opening homepage through alternative means -->
+  <script>
+    function openHomePage() {
+      window.location.href = "index.html";
+    }
+    function openAboutUsPage() {
+      window.location.href = "aboutUsPage.html";
+    }
+    function openServicesPage() {
+      window.location.href = "servicesPage.html";
+    }
+
+    function loadContactUsResponse() {
+      window.alert("Thank you for contacting us. We will get back to you in 1-4 business days. We thank you for your patience");
+    }
+  </script>
+
+</header>
+
+<body>
+  <!-- entire code for navbar --------------------------------------------------->
+  <!-- navigation bar code from right to left tabs -->
+  <div class="topnav">
+    <a href="contactUsPage.html">Contact Us</a>
+    <a href="clientPortalPage.html">Client Portal</a>
+    <a href="newsPage.html">News</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openServicesPage()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="bookkeepingPage.html">Bookkeeping</a>
+        <a href="auditsPage.html">Audits</a>
+        <a href="taxesPage.html">Taxes</a>
+        <a href="annualReportsPage.html">Annual Reports</a>
+      </div> -->
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openAboutUsPage()">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="#missionStatement">Mission Statement</a>
+        <a href="#companyHistory">Company History</a>
+        <a href="#meetOurTeam">Meet Our Team</a>
+      </div> -->
+    </div>
+
+    <div class="accuracyLogo">
+      <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+    </div>
+    <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+  </div>
+  <!-- end of navbar code ------------------------------------------------------->
+
+  <center><h1 class="contactUsInitialText">Contact Us</h1></center>
+
+  <div class="Contactcontainer">
+  <form>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="issue">Issue</label>
+    <select id="issue" name="issue">
+      <optgroup label="Services">
+        <option selected="selected" value="general-services">General Service Issue</option>
+        <option value="services-bookkeeping">Bookkeeping</option>
+        <option value="services-audits">Audits</option>
+        <option value="services-taxes">Taxes</option>
+        <option value="services-annualReports">Annual Reports</option>
+      </opgroup>
+      <optgroup label="Client Portal">
+        <option value="general-clientportal">General Client Portal Issue</option>
+        <option value="clientportal-paymentPlan">Payment Plan</option>
+        <option value="clientportal-documents">Documents</option>
+        <option value="clientportal-schedule">Schedule</option>
+      </optgroup>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" onclick="loadContactUsResponse()">
+
+  </form>
+</div>
+
+</body>
+
+<footer>
+
+  <div class="columnTwoFooter">
+      <div class="accuracyLogo">
+        <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+      </div>
+      <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+
+      <br><br>
+
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      ·
+      <a href="aboutUsPage.html">About Us</a>
+      ·
+      <a href="servicesPage.html">Services</a>
+      ·
+      <a href="clientPortalPage.html">Client Portal</a>
+      ·
+      <a href="contactUsPage.html">Contact Us</a>
+      .
+      <a href="siteMapPage.html">Site Map</a>
+    </p>
+
+    <p class="footer-company-name">Accuracy Accounting &copy; 2018</p>
+  </div>
+
+  <div class="columnTwoFooter">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>2489 Clement Street</span>
+        <br> Atlanta, Georgia</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>404-432-0189</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:accuracy029@gmail.com">accuracy029@gmail.com</a></p>
+    </div>
+
+    <div class="footer-icons">
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i><img id="facebookIcon">Facebook</a>
+      <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i><img id="twitterIcon">Twitter</a>
+      <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-linkedin"></i><img id="linkedInIcon">LinkedIn</a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-instagram"></i><img id="instagramIcon">Instagram</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</html>

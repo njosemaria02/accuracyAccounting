@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title> About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+
+  <!-- javascript required for opening homepage through alternative means -->
+  <script>
+    function openHomePage() {
+      window.location.href = "index.html";
+    }
+    function openAboutUsPage() {
+      window.location.href = "aboutUsPage.html";
+    }
+    function openServicesPage() {
+      window.location.href = "servicesPage.html";
+    }
+
+    function openNewsPage() {
+      window.location.href = "newsPage.html"
+    }
+  </script>
+
+</header>
+
+<body>
+  <!-- entire code for navbar ------------------------------------------------->
+  <!-- navigation bar code from right to left tabs -->
+  <div class="topnav">
+    <a href="contactUsPage.html">Contact Us</a>
+    <a href="clientPortalPage.html">Client Portal</a>
+    <a href="newsPage.html">News</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openServicesPage()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="bookkeepingPage.html">Bookkeeping</a>
+        <a href="auditsPage.html">Audits</a>
+        <a href="taxesPage.html">Taxes</a>
+        <a href="annualReportsPage.html">Annual Reports</a>
+      </div> -->
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openAboutUsPage()">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="#missionStatement">Mission Statement</a>
+        <a href="#companyHistory">Company History</a>
+        <a href="#meetOurTeam">Meet Our Team</a>
+      </div> -->
+    </div>
+
+    <div class="accuracyLogo">
+      <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+    </div>
+    <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+  </div>
+  <!--------------------------------------------------------------------------->
+
+  <!-- initial Text Block ----------------------------------------------------->
+  <div class="initialTextBlock">
+    <p><center><h1>Who Are We?</h1></center></p>
+  </div>
+  <!--------------------------------------------------------------------------->
+
+  <!-- mission statement block ------------------------------------------------>
+  <div id="missionStatementBlock" class="aboutUsblock"><center>
+    <p><h2 name="missionStatement">Mission Statement</h2>
+    <br>
+    At Accuracy, we aim to aid small and private businesses maintain their
+    establishments by relieving the stress involved with finance management.
+    Providing a full range of services and maintaining close relationships with
+    our clients, we provide high quality service with a personal touch.
+    </br>
+  </div></center>
+  <!--------------------------------------------------------------------------->
+
+  <!-- company History Block -------------------------------------------------->
+  <div id="companyHistoryBlock" class="aboutUsblock">
+    <p><h2 name="companyHistory">Company History<h2>
+
+    <div class="timeline">
+      <div class="container left" onclick="openNewsPage()">
+        <div class="content">
+          <h2 class="timelineWords">2003</h2>
+          <p><h3 class="timelineWords" class="timelineWords">Accuracy was founded in Atlanta, Georgia.</p></h3>
+        </div>
+      </div>
+      <div class="container right" onclick="openNewsPage()">
+        <div class="content">
+          <h2 class="timelineWords">2005</h2>
+          <p><h3 class="timelineWords">Officially joined the American Accounting Association.</p></h3>
+        </div>
+      </div>
+      <div class="container left" onclick="openNewsPage()">
+        <div class="content">
+          <h2 class="timelineWords">2012</h2>
+          <p><h3 class="timelineWords">Featured in the Atlanta Journal Constitution.</p></h3>
+        </div>
+      </div>
+      <div class="container right" onclick="openNewsPage()">
+        <div class="content">
+          <h2 class="timelineWords">2015</h2>
+          <p><h3 class="timelineWords">"Mr. Maxwell and his team did an incredibly impressive job
+            managing my business's audit. I could not be more thankful for
+            Accuracy's work during this stressful time for me." <i>-A. Smith, a Loyal Customer</i></p></h3>
+        </div>
+      </div>
+      <div class="container left" onclick="openNewsPage()">
+        <div class="content">
+          <h2 class="timelineWords">2018</h2>
+          <p><h3 class="timelineWords">Opened a new partner office in Marietta, Georgia.</p></h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--------------------------------------------------------------------------->
+
+  <!-- meet the team ---------------------------------------------------------->
+  <div id="meetOurTeamBlock" class="aboutUsblock"><center>
+    <p><h2 class="meetOurTeamHeader" name="meetOurTeam">Meet the Team</h2>
+
+    <br>
+    <div class="row">
+        <div class="columnThree">
+          <img src="aboutChristopher.jpg" width=200px height=200px>
+          <br><h3>Christopher Maxwell</h3>
+          <h4>CPA, Senior Accountant</h4>
+        </div>
+        <div class="columnThree">
+          <img src="aboutMadeline.jpg" width=200px height=200px>
+          <br><h3>Madeline O'Carrol</h3>
+          <h4>CPA, Vice President of Operations</h4>
+        </div>
+        <div class="columnThree">
+          <img src="aboutAnna.jpg" width=200px height=200px>
+          <br><h3>Anna Yi</h3>
+          <h4>Auditor</h4>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="columnThree">
+          <img src="aboutAiguo.jpg" width=200px height=200px>
+          <br><h3>Aiguo Suzuki</h3>
+          <h4>Financial Advisor</h4>
+        </div>
+        <div class="columnThree">
+          <img src="aboutScott.jpg" width=200px height=200px>
+          <br><h3>Scott Wellings</h3>
+          <h4>Tax Accountant</h4>
+        </div>
+        <div class="columnThree">
+          <img src="aboutEric.jpg" width=200px height=200px>
+          <br><h3>Eric Zhang</h3>
+          <h4>Administrative Assistant, Bookkeeper</h4>
+        </div>
+      </div>
+
+  </div></center>
+  <!--------------------------------------------------------------------------->
+
+
+
+</body>
+
+<footer>
+
+  <div class="columnTwoFooter">
+      <div class="accuracyLogo">
+        <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+      </div>
+      <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+
+      <br><br>
+
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      ·
+      <a href="aboutUsPage.html">About Us</a>
+      ·
+      <a href="servicesPage.html">Services</a>
+      ·
+      <a href="clientPortalPage.html">Client Portal</a>
+      ·
+      <a href="contactUsPage.html">Contact Us</a>
+      .
+      <a href="siteMapPage.html">Site Map</a>
+    </p>
+
+    <p class="footer-company-name">Accuracy Accounting &copy; 2018</p>
+  </div>
+
+  <div class="columnTwoFooter">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>2489 Clement Street</span>
+        <br> Atlanta, Georgia</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>404-432-0189</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:accuracy029@gmail.com">accuracy029@gmail.com</a></p>
+    </div>
+
+    <div class="footer-icons">
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i><img id="facebookIcon">Facebook</a>
+      <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i><img id="twitterIcon">Twitter</a>
+      <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-linkedin"></i><img id="linkedInIcon">LinkedIn</a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-instagram"></i><img id="instagramIcon">Instagram</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title> Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+  <!-- javascript required for opening homepage through alternative means -->
+  <script>
+    function openHomePage() {
+      window.location.href = "index.html";
+    }
+    function openAboutUsPage() {
+      window.location.href = "aboutUsPage.html";
+    }
+    function openServicesPage() {
+      window.location.href = "servicesPage.html";
+    }
+
+    function openContactUs() {
+      window.location.href = "contactUsPage.html";
+    }
+  </script>
+
+<!-- code dont need anymore --------------------------------------------------->
+  <!-- <div class="servicesListing"><center>
+    <h2>Services We Provide:</h2></center>
+    <ul>
+      <li><a href="bookkeepingPage.html">Bookkeeping</a>
+      <li><a href="auditsPage.html">Audits</a>
+      <li><a href="taxesPage.html">Taxes</a>
+      <li><a href="annualReportsPage.html">Annual Reports</a>
+    <ul>
+  </div> -->
+<!----------------------------------------------------------------------------->
+
+</header>
+
+<body>
+  <!-- entire code for navbar ------------------------------------------------->
+  <!-- navigation bar code from right to left tabs -->
+  <div class="topnav">
+    <a href="contactUsPage.html">Contact Us</a>
+    <a href="clientPortalPage.html">Client Portal</a>
+    <a href="newsPage.html">News</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openServicesPage()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="bookkeepingPage.html">Bookkeeping</a>
+        <a href="auditsPage.html">Audits</a>
+        <a href="taxesPage.html">Taxes</a>
+        <a href="annualReportsPage.html">Annual Reports</a>
+      </div> -->
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openAboutUsPage()">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="#missionStatement">Mission Statement</a>
+        <a href="#companyHistory">Company History</a>
+        <a href="#meetOurTeam">Meet Our Team</a>
+      </div> -->
+    </div>
+
+    <div class="accuracyLogo">
+      <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+    </div>
+    <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+  </div>
+  <!-- end of navbar code ----------------------------------------------------->
+
+  <center><h1>Services Provided by Accuracy:</h1>
+    <h3>Please select the service you need assistance with below.</h3>
+
+  <!-- welcoming boxes for services ------------------------------------------->
+  <div id="startServiceListing" class="block">
+    <div class="Servicesrow">
+      <div class="columnTwo">
+        <div class="picContainer">
+          <img src="servicesBookkeepingPic.jpg" width=100% height=250px>
+          <h2><a href="#bookkeepingBlock" class="bottom-leftWords">Bookkeeping</a></h2>
+        </div>
+      </div>
+      <div class="columnTwo">
+        <div class="picContainer">
+          <img src="servicesAuditsPic.jpg" width=100% height=250px>
+          <h2><a href="#auditsBlock" class="bottom-leftWords">Audits</a></h2>
+        </div>
+      </div>
+    </div>
+    <div class="Servicesrow">
+      <div class="columnTwo">
+        <div class="picContainer">
+          <img src="servicesTaxesPic.jpg" width=100% height=250px>
+          <h2><a href="#taxesBlock" class="bottom-leftWords">Taxes</a></h2>
+        </div>
+      </div>
+      <div class="columnTwo">
+        <div class="picContainer">
+          <img src="servicesAnnualReportsPic.jpg" width=100% height=250px>
+          <h2><a href="#annualReportsBlock" class="bottom-leftWords">Annual Reports</a></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  </center>
+  <!--------------------------------------------------------------------------->
+
+  <br><br><br>
+
+  <!-- in-depth information on services stated above -------------------------->
+  <div id="depthServiceListing">
+    <div class="rowServices" id="bookkeepingBlock">
+      <div class="columnTwoPic">
+        <div id="servicesBookkeepingPic">
+          <img src="servicesBookkeepingPic.jpg" align="middle" width=50% height=200px>
+        </div>
+      </div>
+      <div class="columnTwoWords">
+        <div>
+          <h2>Bookkeeping</h2>
+          <h4>Managing a business a stressful, especially managing financial records,
+              but that is something we at Accuracy are determined to take responsibility
+              of so you don't have to.</h4>
+          <button onclick="openContactUs()">Contact Us for More Information on Bookkeeping</button>
+          <br><br><button style="float: right;" onclick="openServicesPage()">Back to Top</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="rowServices" id="auditsBlock">
+      <div class="columnTwoPic">
+        <div id="auditsPic">
+        <img src="servicesAuditsPic.jpg" align="middle" width=50% height=200px>
+        </div>
+      </div>
+      <div class="columnTwoWords">
+        <div>
+          <h2>Audits</h2>
+          <h4>Let us help you during tax-return season by offering an affordable,
+              efficient search of your records to ensure your business's establishment.</h4>
+          <button onclick="openContactUs()">Contact Us for More Information on Audits</button>
+          <br><br><button style="float: right;" onclick="openServicesPage()">Back to Top</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="rowServices" id="taxesBlock">
+      <div class="columnTwoPic">
+        <div id="servicesTaxesPic">
+        <img src="servicesTaxesPic.jpg" align="middle" width=50% height=200px>
+        </div>
+      </div>
+      <div class="columnTwoWords">
+        <div>
+          <h2>Taxes</h2>
+          <h4>Tax planning and preparation is crucial to decreasing costs and
+              increasing profits. Accuracy will work to make personalized plans for
+              your company and walk you through the process of evaluating tax laws
+              and exemptions.</h4>
+          <button onclick="openContactUs()">Contact Us for More Information on Tax Planning</button>
+          <br><br><button style="float: right;" onclick="openServicesPage()">Back to Top</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="rowServices" id="annualReportsBlock">
+      <div class="columnTwoPic">
+        <div id="annualReportsPic">
+        <img src="servicesAnnualReportsPic.jpg" align="middle" width=50% height=200px>
+        </div>
+      </div>
+      <div class="columnTwoWords">
+        <div>
+          <h2>Annual Reports</h2>
+          <h4>Keep your shareholders and investors informed with a comprehensive
+              report on your company's activities and financial performance.</h4>
+          <button onclick="openContactUs()">Contact Us for More Information on Annual Reports</button>
+          <br><br><button style="float: right;" onclick="openServicesPage()">Back to Top</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------------------------------------------------------------->
+
+
+</body>
+
+<footer>
+
+  <div class="columnTwoFooter">
+      <div class="accuracyLogo">
+        <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+      </div>
+      <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+
+      <br><br>
+
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      ·
+      <a href="aboutUsPage.html">About Us</a>
+      ·
+      <a href="servicesPage.html">Services</a>
+      ·
+      <a href="clientPortalPage.html">Client Portal</a>
+      ·
+      <a href="contactUsPage.html">Contact Us</a>
+      .
+      <a href="siteMapPage.html">Site Map</a>
+    </p>
+
+    <p class="footer-company-name">Accuracy Accounting &copy; 2018</p>
+  </div>
+
+  <div class="columnTwoFooter">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>2489 Clement Street</span>
+        <br> Atlanta, Georgia</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>404-432-0189</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:accuracy029@gmail.com">accuracy029@gmail.com</a></p>
+    </div>
+
+    <div class="footer-icons">
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i><img id="facebookIcon">Facebook</a>
+      <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i><img id="twitterIcon">Twitter</a>
+      <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-linkedin"></i><img id="linkedInIcon">LinkedIn</a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-instagram"></i><img id="instagramIcon">Instagram</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</html>

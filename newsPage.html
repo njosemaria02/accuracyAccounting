@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html id="newsPageBody">
+
+<header>
+  <title> News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- javascript required for opening homepage through alternative means -->
+  <script>
+    function openHomePage() {
+      window.location.href = "index.html";
+    }
+    function openAboutUsPage() {
+      window.location.href = "aboutUsPage.html";
+    }
+    function openServicesPage() {
+      window.location.href = "servicesPage.html";
+    }
+
+    function openNewsPage() {
+      window.alert("Article not currently available. Please try again another time. Thank you for understanding.")
+      window.location.href = "newsPage.html";
+    }
+
+  </script>
+
+</header>
+
+<body>
+  <!-- entire code for navbar --------------------------------------------------->
+  <!-- navigation bar code from right to left tabs -->
+  <div class="topnav">
+    <a href="contactUsPage.html">Contact Us</a>
+    <a href="clientPortalPage.html">Client Portal</a>
+    <a href="newsPage.html">News</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openServicesPage()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="bookkeepingPage.html">Bookkeeping</a>
+        <a href="auditsPage.html">Audits</a>
+        <a href="taxesPage.html">Taxes</a>
+        <a href="annualReportsPage.html">Annual Reports</a>
+      </div> -->
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openAboutUsPage()">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="#missionStatement">Mission Statement</a>
+        <a href="#companyHistory">Company History</a>
+        <a href="#meetOurTeam">Meet Our Team</a>
+      </div> -->
+    </div>
+
+    <div class="accuracyLogo">
+      <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+    </div>
+    <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+  </div>
+  <!-- end of navbar code ------------------------------------------------------->
+
+    <!-- code no longer going to use; <section>
+
+
+    <div id="articles">
+      <article>
+        <h3><a href="singlepost.html">Suspendisse Enim Elit Tempor Acer</a></h3>
+        <h4>Posted By: <a href="#">Admin</a> On January 29th, 2013 In <a href="#">Freebies</a>.</h4>
+        <img src="images/a1.jpg" alt="" />
+        <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, tortor at vulputate blandit, magna risus posuere turpis, nec cursus ipsum arcu nec felis. Mauris sed lectus dui. Suspendisse enim elit, tempor ac ullamcorper et, eleifend quis sem. Sed euismod sagittis ligula, a imperdiet sapien molestie nec. Curabitur ut eros a justo fermentum vulputate ac sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, tortor at vulputate blandit, magna risus posuere turpis, nec cursus ipsum arcu nec felis. Mauris sed lectus dui. <a class="continue" href="singlepost.html">Continue Reading &rarr;</a></p></h5>
+      </article>
+      <article>
+        <h3><a href="singlepost.html">Mauris Sed Lectus Duieleifend Quis Sem</a></h3>
+        <h4>Posted By: <a href="#">Admin</a> On January 29th, 2013 In <a href="#">Tutorials</a>.</h4>
+        <img src="images/a2.jpg" alt="" />
+        <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, tortor at vulputate blandit, magna risus posuere turpis, nec cursus ipsum arcu nec felis. Mauris sed lectus dui. Suspendisse enim elit, tempor ac ullamcorper et, eleifend quis sem. Sed euismod sagittis ligula, a imperdiet sapien molestie nec. Curabitur ut eros a justo fermentum vulputate ac sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, tortor at vulputate blandit, magna risus posuere turpis, nec cursus ipsum arcu nec felis. Mauris sed lectus dui. Eleifend quis sem. Sed euismod sagittis ligula, a imperdiet sapien molestie nec. Curabitur ut eros a justo fermentum vulputate ac sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, tortor at vulputate blandit, magna risus posuere turpis, nec cursus ipsum arcu nec felis. Mauris sed lectus dui. <a class="continue" href="singlepost.html">Continue Reading &rarr;</a></p></h5>
+      </article>
+      <article>
+        <h3><a href="singlepost.html">Mauris Sed Lectus Duieleifend Quis Sem</a></h3>
+        <h4>Posted By: <a href="#">Admin</a> On January 29th, 2013 In <a href="#">Tutorials</a>.</h4>
+        <img src="images/a3.jpg" alt="" />
+        <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, tortor at vulputate blandit, magna risus posuere turpis, nec cursus ipsum arcu nec felis. Mauris sed lectus dui. Suspendisse enim elit, tempor ac ullamcorper et, eleifend quis sem. Sed euismod sagittis ligula, a imperdiet sapien molestie nec. Curabitur ut eros a justo fermentum vulputate ac sit amet metus. Lorem ipsum dolor sit amet. <a class="continue" href="singlepost.html">Continue Reading &rarr;</a></p></h5>
+      </article>
+      <article>
+        <h3><a href="singlepost.html">Mauris Sed Lectus Duieleifend Quis Sem</a></h3>
+        <h4>Posted By: <a href="#">Admin</a> On January 29th, 2013 In <a href="#">Photography</a>.</h4>
+        <img src="images/a4.jpg" alt="" />
+        <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, tortor at vulputate blandit, magna risus posuere turpis, nec cursus ipsum arcu nec felis. Mauris sed lectus dui. Suspendisse enim elit, tempor ac ullamcorper et, eleifend quis sem. Sed euismod sagittis ligula, a imperdiet sapien molestie nec. Curabitur ut eros a justo fermentum vulputate ac sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, tortor at vulputate blandit, magna risus posuere turpis, nec cursus ipsum arcu nec felis. Mauris sed lectus dui. Eleifend quis sem. <a class="continue" href="singlepost.html">Continue Reading &rarr;</a></p></h5>
+      </article>
+    </div>
+
+    <div id="sidebar">
+      <aside>
+        <h1>Recent Posts</h1>
+        <ul>
+          <li><a href="#">Suspendisse Enim Elit Tempor Acer</a></li>
+          <li><a href="#">Mauris Sed Lectus Duieleifend Quis Sem</a></li>
+          <li><a href="#">Suspendisse Enim Elit Tempor Acer Fermentum Vulputate</a></li>
+          <li><a href="#">Mauris Sed Lectus Duieleifend Quis Sem</a></li>
+        </ul>
+      </aside>
+      <aside>
+        <div id="cat">
+          <h1>Categories</h1>
+          <ul>
+            <li><a href="#">Webdesign</a>
+            <li><a href="#">Javascript</a>
+          </ul>
+        </div>
+        <div id="archives">
+          <h1>Archives</h1>
+          <ul>
+            <li><a href="#">November 2012</a>
+            <li><a href="#">December 2012</a>
+            <li><a href="#">January 2013</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section> -->
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>ACCURATE ANSWERS</b></h1>
+  <p>Welcome to Accuracy's Company Blog. Read what we have to say!</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="newsSisterLocation.jpg" alt="SisterLocation" style="width:100%">
+    <div class="w3-container">
+      <h3><b style="color: black;">NEW SISTER LOCATION</b></h3>
+      <h5 style="color: black;">Company Achievement, <span style="color: black;" class="w3-opacity">February 7, 2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p style="color: black;">Building credibility and popularity in the local Atlanta area has granted us the opportunity of opening a new sister location in Marietta, GA.
+      Accuracy is expanding and we hope you're along for the ride!</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b id="readMoreButton" onclick = "openNewsPage()">READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b style="color: black;">Comments  </b> <span class="w3-badge">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="newsAtlantaConstitution.jpg" alt="AtlantaConstitution" style="width:100%">
+    <div class="w3-container">
+      <h3><b style="color: black;">ATLANTA JOURNAL CONSTITUTION FEATURE</b></h3>
+      <h5 style="color: black;">Company Achievement, <span style="color: black;" class="w3-opacity">April 2, 2012</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p style="color: black;">Eleven years after the establishment of Accuracy, the company was featured in the Atlanta Journal Constitution in an article discussing the best local accounting firms in Atlanta, and Accuracy made it into the Top 25 list of the article.
+      Accuracy only continues to grow with great recognition like this and with the support of its customers, so the next goal is for the Top 10 list in the newspaper!</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button style="color: black;" class="w3-button w3-padding-large w3-white w3-border" onclick = "openNewsPage()"><b id="readMoreButton">READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b style="color: black;">Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Recent Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li onclick = "openNewsPage()" class="w3-padding-16">
+        <img src="newsBulletSquare.png" alt="Image" class="w3-left w3-margin-right" style="width:40px" height=40px>
+        <span style="color: black;" class="w3-large">NEW SISTER LOCATION</span><br>
+        <span style="color: black;">Company Achievement</span>
+      </li>
+      <li onclick = "openNewsPage()" class="w3-padding-16">
+        <img src="newsBulletSquare.png" alt="Image" class="w3-left w3-margin-right" style="width:40px" height=40px>
+        <span style="color: black;" class="w3-large">AJC Feature</span><br>
+        <span style="color: black;">Company Achievement</span>
+      </li>
+      <li onclick = "openNewsPage()" class="w3-padding-16">
+        <img src="newsBulletSquare.png" alt="Image" class="w3-left w3-margin-right" style="width:40px" height=40px>
+        <span style="color: black;" class="w3-large">AMERICAN ACCOUNTING ASSOCIATION</span><br>
+        <span style="color: black;">Company Achievement</span>
+      </li>
+      <li onclick = "openNewsPage()" class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="newsBulletSquare.png" alt="Image" class="w3-left w3-margin-right" style="width:40px" height=40px>
+        <span style="color: black;" class="w3-large">FIRST POST-NEW COMPANY!</span><br>
+        <span style="color: black;">Company Achievement</span>
+      </li>
+    </ul>
+  </div>
+
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+</body>
+
+<footer>
+
+  <div class="columnTwoFooter">
+      <div class="accuracyLogo">
+        <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
+      </div>
+      <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+
+      <br><br>
+
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      ·
+      <a href="aboutUsPage.html">About Us</a>
+      ·
+      <a href="servicesPage.html">Services</a>
+      ·
+      <a href="clientPortalPage.html">Client Portal</a>
+      ·
+      <a href="contactUsPage.html">Contact Us</a>
+      .
+      <a href="siteMapPage.html">Site Map</a>
+    </p>
+
+    <p class="footer-company-name">Accuracy Accounting &copy; 2018</p>
+  </div>
+
+  <div class="columnTwoFooter">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>2489 Clement Street</span>
+        <br> Atlanta, Georgia</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>404-432-0189</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:accuracy029@gmail.com">accuracy029@gmail.com</a></p>
+    </div>
+
+    <div class="footer-icons">
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i><img id="facebookIcon">Facebook</a>
+      <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i><img id="twitterIcon">Twitter</a>
+      <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-linkedin"></i><img id="linkedInIcon">LinkedIn</a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-instagram"></i><img id="instagramIcon">Instagram</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</html>

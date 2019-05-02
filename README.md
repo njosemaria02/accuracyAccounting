@@ -1,2 +1,1 @@
-# accuracyAccounting
-FBLA website
+# accuracy029.github.io

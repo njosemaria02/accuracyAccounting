@@ -1,0 +1,604 @@
+/* ALL PAGES css **************************************************************/
+* {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+* :not(#accuracyWordLogo):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(button):not(.w3-light-grey):not(.siteMapList):not(input):not(textarea):not(select):not(option):not(optgroup):not(.footer-links) {
+  color: white;
+}
+
+/* * :not(.topnav):not(.frontText):not(button):not(.content):not(table):not(td):not(th):not(input):not(select):not(textarea):not(.timeline):not(.timelineWords):not(a):not(.rowServices):not(.columnTwoPics):not(.columnTwoWords):not(b) {
+  background-color: #333333;
+} */
+
+body:not(.siteMapBody) {
+  background-color: #333333;
+}
+
+h1 {
+  color: #A16E83;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+a:link:not(.topnav) {
+  color:  #4d94ff;
+}
+
+a:visited {
+  color:  #00bfff;
+}
+
+footer {
+  background-color: #333333;
+}
+
+ /* #33cccc; */
+
+/* a:hover:not(.topnav):not(.bottom-leftWords) {
+  color:  #0080ff
+}
+
+a:visited:not(.topnav):not(.bottom-leftWords) {
+  color:  #0080ff
+} */
+
+button {
+  color: black;
+  border: black;
+}
+
+button:hover {
+  background-color: grey;
+  border: grey;
+}
+
+
+/******************************************************************************/
+
+
+/* NAV BAR css ****************************************************************/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Add a color to the active/current link (page currently on basically) */
+.topnav a.active {
+    background-color: #479761;
+    color: white;
+}
+
+.accuracyLogo {
+  float: left;
+  height: 48px;
+  width: 37.2px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* .accuracyLogo:hover {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: white;
+} */
+.navBarLogo {
+  float: left;
+  padding: 10px 4px 10px 25px;
+}
+
+#accuracyWordLogo {
+  font-family: 'Krub', sans-serif;
+  font-size: 30px;
+  color: #CEBC81;
+  text-align: center;
+}
+
+/* start of dropdown code ***********************/
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropbtn:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/******************************************************************************/
+
+
+/* HOME PAGE / INDEX css ***************************************************************/
+/* makes the image in background fullscreen */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("homepage_picture.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* front text of homepage ***********************/
+.frontText {
+  position: fixed;
+  top: 28%;
+  left: 5%;
+  /* transform: translate(-50%, -50%); */
+  font-family: 'Krub', sans-serif;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#flashAnimation {
+  font-style: italic;
+
+  border: #333333 double 10px;
+  background-color: white;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 20px 20px 20px 22px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#exitButton {
+  color: grey;
+  font-size: 28px;
+  /* position: absolute;
+  bottom: 20px;
+  right: 10px; */
+  padding: 5px 5px 5px 5px;
+}
+
+#exitButton:hover {
+  color: pink;
+}
+
+#exitButtonArea {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+/******************************************************************************/
+
+
+/* ABOUT US PAGE css **********************************************************/
+/* for three-column tables */
+.columnThree { /* also used by footer*/
+  float: left;
+  width: 33.33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 50px;
+}
+
+.aboutUsblock {
+  padding: 100px;
+}
+
+.initialTextBlock {
+  padding: 150px 50px 50px 50px;
+  font-size: 30px;
+}
+
+#missionStatementBlock {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.meetOurTeamHeader {
+  color: #B19F9E;
+}
+
+/* timeline css ********************************/
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 5px 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #CEBC81;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #4d94ff;
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #4d94ff transparent transparent;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #479761;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+/******************************************************************************/
+
+
+/* SERVICES PAGE css ***************************************************************/
+/* #bookkeepingBlock, #auditsBlock, #taxesBlock, #annualReportsBlock {
+  background-color: #B19F9E;
+} */
+
+.columnTwo {
+  float: left;
+  width: 50%;
+}
+
+.picContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-leftWords {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.Servicesrow {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 0px 0px 0px 0px;
+}
+
+.columnTwoPic {
+  float: left;
+  width: 50%;
+  text-align: right;
+  padding: 31px 100px 0px 0px;
+}
+
+.columnTwoWords {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding-right: 100px;
+}
+
+.rowServices:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 150px 5% 150px 5%;
+}
+
+/* also used in about us!!! -- changed to aboutUsblock look there*/
+.block:not(#startServiceListing) {
+  padding: 200px;
+}
+
+#startServiceListing {
+  padding: 50px 25% 100px 25%;
+}
+/******************************************************************************/
+
+/* NEWS PAGE CSS **************************************************************/
+/*article {
+    border: 10px black inset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 35%;
+
+    float:left;
+    display:inline;
+    width: 49%;
+  }*/
+  /*#sidebar {
+    float:left;
+    display:inline;
+    width: 49%;
+  } */
+
+#readMoreButton {
+  color: black;
+}
+
+/******************************************************************************/
+
+
+/* CLIENT PORTAL PAGE css **********************************************************/
+#infoBorder {
+  padding: 15px 30px;
+  margin: auto;
+  width: 75%;
+  border: 3px solid black;
+}
+
+.clientInfo {
+  display: none;
+}
+
+#clientPageIntro {
+  display: block;
+}
+
+#defaultOpen {
+  display: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #B19F9E;
+}
+
+.tabcontentHeaders {
+  color: #479761;
+}
+
+.smallerFont {
+  font-weight: normal;
+  font-size: 14px;
+}
+/******************************************************************************/
+
+
+/* CONTACT US PAGE css ********************************************************/
+.contactUsInitialText {
+  padding: 50px 0px 10px 0px;
+}
+
+/* FORM CSS ****************************************/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text], textarea, select, option {
+  color: black;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #479761;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #316844;
+}
+
+/* Add a background color and some padding around the form */
+.Contactcontainer {
+    border-radius: 5px;
+    background-color: #333333;
+    padding: 0px 300px 0px 300px;
+    margin-bottom: 150px;
+}
+/******************************************************************************/
+
+/* FOOTER CSS ****************************************************************/
+footer {
+  border: 2px black inset;
+}
+
+.columnTwoFooter {
+  float: left;
+  width: 30%;
+  margin: 5% 10% 5% 10%;
+}
+
+.siteMapList {
+  color: black;
+}
